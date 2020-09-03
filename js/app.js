@@ -8,10 +8,10 @@ click.addEventListener("click", function() {
     click.style.fontSize = "75px";
 });
 
-document.addEventListener('keyup', event => {
-    if(event.code == 'space') {
-        document.getElementById("space");
-   }
+var keydown = document.addEventListener ('keydown', event => {
+  if (event.code === 'Space') {
+    keydown.body.style.backgroundColor = "orange";
+    console.log ('Space pressed');
+  }
 });
-
 
